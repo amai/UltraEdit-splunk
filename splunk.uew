@@ -1,0 +1,153 @@
+/L4"Splunk" Line Comment = # Escape Char = \ File Extensions = SPL CONF
+/TGBegin "Stanza"
+/TGFindStr = "^[ \t]*\[(.*)\]"
+/TGEnd
+//type name;
+//type name = init;
+/Regexp Type = Perl
+/Delimiters = ! "	%&'()*+,-./:;<=>?@[\]^{|}~
+/Open Brace Strings =  "{" "(" "[" "<"
+/Close Brace Strings = "}" ")" "]" ">"
+/Member String = "\$S[ \t]*=[ \t&]*new[ \t]+([a-z_]+[a-z0-9_]*)"
+/Variable String = "\$S[ \t]*=[ \t&]*new[ \t]+([a-z_]+[a-z0-9_]*)"
+/C1"Splunk Keywords"
+_SYSLOG_ROUTING _TCP_ROUTING 
+_actions _blacklist _INDEX_AND_FORWARD_ROUTING _meta _raw _rcvbuf _time _whitelist                               
+acceptFrom ackIdleCleanup ADD_EXTRA_TIME_FIELDS addressFamily admin_all_objects allowQueryStringAuth allowSslCompression allowSslRenegotiation alwaysOpenFile ANNOTATE_PUNCT archiver.selfStorageBucket archiver.selfStorageBucketFolder archiver.selfStorageProvider assureUTF8 author authType AUTO_KV_JSON autoLB autoLBFrequency                            
+baseline baseline_interval batch_size blacklist. blacklist1 blockOnCloning blockSignatureDatabase blockSignSize bloomHomePath BREAK_ONLY_BEFORE BREAK_ONLY_BEFORE_DATE bucketRebuildMemoryHint busyKeepAliveIdleTimeout                            
+CAN_OPTIMIZE CHARSET CHECK_FOR_HEADER CHECK_METHOD CLEAN_KEYS 
+caCertFile caCertPath caPath category certCreateScript change_authentication change_own_password channel_cookie channelReapInterval channelReapLowater channelTTL checkpointInterval cipherSuite clientCert coldPath coldToFrozenDir coldToFrozenScript compressed compressRawdata concurrentChannelLimit connection_host connectionTimeout continueMatching counters crcSalt createBloomfilter crossOriginSharingPolicy current_only                        
+DATETIME_CONFIG DATETIME_CONFIG DEFAULT_VALUE DELIMS DEPTH_LIMIT DEST_KEY
+datatype dedicatedIoThreads defaultDatabase defaultGroup delayInMills delete_by_keyword deleted description detect_trailing_nulls dhFile direction disabled disableGlobalMetadata docsCheckerBaseURL driverBufferSize dropClonedEventsOnQueueFull dropEventsOnQueueFull                           
+** EVAL EXTRACT
+EVENT_BREAKER EVENT_BREAKER_ENABLE 
+ecdhCurveName ecdhCurves edit_deployment_client edit_deployment_server edit_dist_peer edit_forwarders edit_httpauths edit_input_defaults edit_monitor edit_roles edit_scripted edit_search_server edit_server edit_splunktcp edit_splunktcp_ssl edit_tcp edit_udp edit_user edit_web_settings edit_win_admon edit_win_eventlogs edit_win_perfmon edit_win_regmon edit_win_wmiconf enable_autocomplete_login enable_gzip enable_insecure_login enable_proxy_write enabled_decomposers enableDataIntegrityControl enableOnlineBucketRepair enableRealtimeSearch enableS2SHeartbeat enableSplunkdSSL enableSplunkWebSSL enableSSL enableTsidxReduction engine.autoreload_on evt_ad_cache_disabled evt_ad_cache_exp evt_ad_cache_exp_neg evt_ad_cache_max_entries evt_dc_name evt_dns_name evt_resolve_ad_ds evt_resolve_ad_obj evt_sid_cache_disabled evt_sid_cache_exp evt_sid_cache_exp_neg evt_sid_cache_max_entries external_cmd 
+** FIELDALIAS-
+FIELD_DELIMITER FIELD_HEADER_REGEX FIELD_NAMES FIELD_QUOTE FIELDS FORMAT 
+fields_list filename filesPerDelay filters filterType flash_major_version flash_minor_version flash_revision_version followLinks followSymlink followTail force_local_processing forceHttp10 forceTimebasedAutoLB formatString forwardedindex frozenTimePeriodInSecs fullEvent                          
+get_metadata get_typeahead getUserInfoTTL getUsersTTL gif given_type GLOBAL SETTINGS hashMaxSize                              
+HEADER_MODE HEADER_FIELD_DELIMITER HEADER_FIELD_LINE_NUMBER HEADER_FIELD_QUOTE HEADER_MODE
+hashMaxSize heartbeatFrequency hive homePath homePath.maxDataSizeMB host host_regex host_segment hotBucketTimeRefreshInterval htm httpport                            
+INDEXED_EXTRACTIONS 
+ignoreOlderThan importRoles index indexAndForward indexes indexes.conf.spec indexThreads initCrcLength inPlaceUpdates input_file inputShutdownTimeout instances interval invalid_cause is_configured is_valid is_visible isReadOnly                             
+journalCompression jpg js_logger_ js_no_ jschart_test_mode JSON_TRIM_BRACES_IN_ARRAY_NAMES                                
+KEEP_EMPTY_VALS keepAliveIdleTimeout KV_MODE KV_TRIM_SPACES LEARN_MODEL                              
+** LESS_THAN LOOKUP
+label lastChanceIndex LEARN_MODEL LEARN_SOURCETYPE LESS_THAN_70 license_tab LINE_BREAKER LINE_BREAKER_LOOKBEHIND list_deployment_client list_forwarders list_httpauths list_inputs list_pdfserver list_win_localavailablelogs listenOnIPv6 lock. log.access_ log.error_ log.screen login_ LOOKAHEAD                           
+** MORE_THAN
+MATCH_LIMIT MAX_DAYS_AGO MAX_DAYS_HENCE MAX_DIFF_SECS_AGO MAX_DIFF_SECS_HENCE MAX_EVENTS MAX_TIMESTAMP_LOOKAHEAD MUST_BREAK_AFTER MUST_NOT_BREAK_AFTER MUST_NOT_BREAK_BEFORE MV_ADD                   
+max_matches max_view_cache_size maxBloomBackfillBucketAge maxBucketSizeCacheEntries maxConcurrentOptimizes maxConnectionsPerIndexer maxDataSize maxDataSizeMB maxDist maxFailuresPerInterval maxGlobalDataSizeMB maxHotBuckets maxHotIdleSecs maxHotSpanSecs maxIdleTime maxMemMB maxMetaEntries maxQueueSize maxRunningProcessGroups maxRunningProcessGroupsLowPriority maxSize maxSockets maxThreads maxTimeUnreplicatedNoAcks maxTimeUnreplicatedWithAcks maxTotalDataSizeMB maxVolumeDataSizeMB maxWarmDBCount memPoolMB METRICS_PROTOCOL mgmtHostPort min_matches minHotIdleSecsBeforeForceRoll minify_css minify_js minRawFileSyncSecs minStreamGroupQueueSize MISSING_VALUE_REGEX mode module_dir monitorSubtree MORE_THAN_80 move_policy multikvMaxEventCount multikvMaxTimeMs multiline_event_extra_waittime 
+NO_BINARY_CHECK negotiateNewProtocol negotiateProtocolLevel no_appending_timestamp NO_BINARY_CHECK no_priority_stripping                                
+object output_file outputgroup                                
+packetType partialServiceMetaPeriod passAuth password path PER INDEX OPTIONS PER PROVIDER FAMILY OPTIONS PER PROVIDER OPTIONS PER VIRTUAL INDEX OPTIONS persistentQueueSize png poll.blacklist. poll.interval. pollPeriod port power;user&#x000D;&#x000A;license_edit PREAMBLE_REGEX PREFIX_SOURCETYPE printSchema priority privKeyPath proc process processTrackerServiceInterval protocol pulldown_type                           
+quarantineFutureSecs quarantinePastSecs queryLanguageDefinition queue queueSize quota                                
+** recordreader
+** REGEX REPORT
+rawChunkSizeBytes rawFileSizeBytes rawTcpDoneTimeout readInterval readTimeout recordreader.csv.dialect recordreader.journal.buffer.size recurse recursive regex remote remote.s3.access_key remote.s3.auth_region remote.s3.dhFile remote.s3.ecdhCurves remote.s3.enable_data_integrity_checks remote.s3.enable_signed_payloads remote.s3.encryption remote.s3.encryption.sse-c.key_refresh_interval remote.s3.encryption.sse-c.key_type remote.s3.endpoint remote.s3.header remote.s3.kms. remote.s3.kms.access_key remote.s3.kms.auth_region remote.s3.kms.key_id remote.s3.kms.max_concurrent_requests remote.s3.kms.secret_key remote.s3.max_count.max_retries_in_total remote.s3.max_count.max_retries_per_part remote.s3.multipart_download.part_size remote.s3.multipart_max_connections remote.s3.multipart_upload.part_size remote.s3.retry_policy remote.s3.secret_key remote.s3.signature_version remote.s3.sslAltNameToCheck remote.s3.sslCommonNameToCheck remote.s3.sslVersions remote.s3.supports_versioning remote.s3.timeout.connect remote.s3.timeout.read remote.s3.timeout.write remote.s3.use_delimiter remote_queue.* remote_queue.sqs.access_key remote_queue.sqs.auth_region remote_queue.sqs.buffer.visibility remote_queue.sqs.endpoint remote_queue.sqs.large_message_store.endpoint remote_queue.sqs.large_message_store.path remote_queue.sqs.max_connections remote_queue.sqs.max_count.max_retries_per_part remote_queue.sqs.message_group_id remote_queue.sqs.min_pending_messages remote_queue.sqs.retry_policy remote_queue.sqs.secret_key remote_queue.sqs.timeout.connect remote_queue.sqs.timeout.read remote_queue.sqs.timeout.receive_message remote_queue.sqs.timeout.visibility remote_queue.sqs.timeout.write remoteAddress remotePath remoteUser rename renderXml repFactor replyHeader repositoryLocation request.show_tracebacks request_remote_tok requireClientCert requireHeader response.timeout rest_apps_management rest_apps_view rest_properties_get rest_properties_set restart_splunkd restartSplunkd restartSplunkWeb root_endpoint rootCA rotatePeriodInSecs route rss_endpoint rtRouterQueueSize rtRouterThreads rtsearch rtSrchJobsQuota run_debug_commands         
+** SEDCMD SEGMENTATION-
+** splitter
+s2sHeartbeatTimeout samplingInterval schedule schedule_search script search secsInFailureInterval selectiveIndexing selfStorageThreads send_index_as_argument_for_path sendCookedData sendEventMaxSize sendStrictTransportSecurityHeader server serverCert serverName serviceFormPostURL serviceInactiveIndexesPeriod serviceMetaPeriod serviceOnlyAsNeeded serviceSubtaskTimingPeriod SHOULD_LINEMERGE showZeroValue sid_cache_disabled sid_cache_exp sid_cache_exp_neg sid_cache_max_entries signedaudit slaves source SOURCE_KEY sourcetype splitByIndexKeys splitter.file.split.maxsize splitter.file.split.minsize srchDiskQuota srchFilter srchIndexesAllowed srchIndexesDefault srchJobsQuota srchMaxTime srchTimeWin sslAltNameToCheck sslCertPath sslCommonNameToCheck sslKeysfile sslKeysfilePassword sslPassword sslQuietShutdown sslRootCAPath sslVerifyServerCert sslVersions SSOMode stack_id start_by_shell start_from startingNode startwebserver state stateOnClient static_dir static_endpoint stats STATSD-DIM-TRANSFORMS stopAcceptorAfterQBlock storage storageType streamingTargetTsidxSyncPeriodMsec summaryHomePath supportSSLV3Only suppress_checkpoint suppress_keywords suppress_opcode suppress_sourcename suppress_task suppress_text suppress_type suppressBannerList suspendHotRollByDeleteQuery sync syncMeta           
+** TRANSFORMS
+TIME_FORMAT TIME_PREFIX TIMESTAMP_FIELDS TZ TZ_ALIAS
+targetDc targetUri template_dir testing_dir testing_endpoint thawedPath thread_wait_time_msec throttleCheckPeriod time_before_close timePeriodInSecBeforeTsidxReduction timestampformat token tools.decode. tools.encode. tools.sessions. trap_module_exceptions TRUNCATE tsidxReductionCheckPeriodInSec tsidxStatsHomePath tstatsHomePath txt type                         
+ui_inactivity_timeout unarchive_cmd unarchive_sourcetype updateCheckerBaseURL use_future_expires use_old_eventlog_api use_threads useACK useClientSSLCompression useDeploymentServer useEnglishOnly user userBufferSize userLoginTTL userRegistrationURL useSplunkdClientSSLCompression                            
+version vix                                 
+warmToColdScript whitelist. whitelist1 WRITE_META write_pdfserver writeTimeout                                
+xml xsl                               
+/C2"empty"
+_actions 
+ADD_EXTRA_TIME_FIELDS ANNOTATE_PUNCT AUTO_KV_JSON 
+BREAK_ONLY_BEFORE BREAK_ONLY_BEFORE_DATE 
+CHARSET CHECK_FOR_HEADER CHECK_METHOD DATETIME_CONFIG DEPTH_LIMIT 
+category 
+description detect_trailing_nulls 
+** EVAL- EXTRACT-
+EVENT_BREAKER EVENT_BREAKER_ENABLE  
+** FIELDALIAS-
+FIELD_DELIMITER FIELD_HEADER_REGEX FIELD_NAMES FIELD_QUOTE  
+force_local_processing 
+given_type 
+HEADER_FIELD_DELIMITER HEADER_FIELD_LINE_NUMBER HEADER_FIELD_QUOTE HEADER_MODE 
+INDEXED_EXTRACTIONS 
+initCrcLength invalid_cause is_valid 
+JSON_TRIM_BRACES_IN_ARRAY_NAMES 
+KV_MODE KV_TRIM_SPACES 
+** LESS_THAN LOOKUP LOOKUP_ LOOKUP-
+LEARN_MODEL LEARN_SOURCETYPE LESS_THAN_70 LINE_BREAKER LINE_BREAKER_LOOKBEHIND  	
+** MORE_THAN
+MATCH_LIMIT MAX_DAYS_AGO MAX_DAYS_HENCE MAX_DIFF_SECS_AGO MAX_DIFF_SECS_HENCE MAX_EVENTS MAX_TIMESTAMP_LOOKAHEAD METRICS_PROTOCOL MISSING_VALUE_REGEX MORE_THAN_80 MUST_BREAK_AFTER MUST_NOT_BREAK_AFTER MUST_NOT_BREAK_BEFORE 
+maxDist 
+NO_BINARY_CHECK 
+PREAMBLE_REGEX PREFIX_SOURCETYPE 
+priority pulldown_type 
+** REPORT-
+rename 
+SHOULD_LINEMERGE STATSD-DIM-TRANSFORMS 
+sourcetype 
+TIME_FORMAT TIME_PREFIX TIMESTAMP_FIELDS TRUNCATE TZ TZ_ALIAS 
+unarchive_cmd unarchive_sourcetype  
+/C3"Variables" 
+!aNULL !eNULL !EXP !LOW 
+absent_key ALL always auto
+** blacklist 
+default disable 
+enable enabled 
+false
+GB
+has_key
+indexing indexQueue
+KB
+MB 
+main multikv
+never
+oldest
+PDC parsingQueue
+RC4+RSA rejectAlways replicationQueue
+single
+TB 
+true typingQueue
+** whitelist
+** $
+(
+)
+/C4"Stanzas"
+** [
+]
+/C5"Substrings"
+accept	arg	
+command	command	
+default	
+env	
+family	fields	format	fs	
+heartbeat	heartbeat.interval	heartbeat.path	heartbeat.threshold	home.datanode	home.hdfs	HUNK_THIRDPARTY_JARS	
+ignore	impersonation	input	input	
+jars	javaprops	job	kerberos	
+keytab	
+lt.format	lt.offset	lt.regex	lt.timezone	lt.value	
+mapred	mode	
+name	
+offset	output.buckets.from.indexes	output.buckets.max.network.bandwidth	output.buckets.older.than	output.buckets.path	
+path	principal	provider	
+regex	required	
+search.column.filter	search.debug	search.mixedmode	search.mixedmode.maxstream	search.mr.mapper.output.gzlevel	search.mr.mapper.output.replication	search.mr.maxsplits	search.mr.minsplits	search.mr.poll	search.mr.splits.multiplier	search.mr.threads	search.recordreader	search.recordreader.avro.regex	search.recordreader.sequence.ignore.key	search.splitter	search.splitter.hive.columnnames	search.splitter.hive.columntypes	search.splitter.hive.dbname	search.splitter.hive.fileformat	search.splitter.hive.fileformat.inputformat	search.splitter.hive.ppd	search.splitter.hive.rowformat.collectionitems.terminated	search.splitter.hive.rowformat.escaped	search.splitter.hive.rowformat.fields.terminated	search.splitter.hive.rowformat.lines.terminated	search.splitter.hive.rowformat.mapkeys.terminated 	search.splitter.hive.serde	search.splitter.hive.serde.properties	search.splitter.hive.tablename	search.splitter.parquet.simplifyresult	setup.bundle.max.inactive.wait	setup.bundle.poll.interval	setup.bundle.reap.timelimit	setup.bundle.replication	setup.bundle.setup.timelimit	setup.onsearch	setup.package	setup.package.max.inactive.wait	setup.package.poll.interval	setup.package.replication	setup.package.setup.timelimit	timezone	
+tracker	
+unified.search.cutoff_sec	value	
+/C6"Empty"
+/C7"Operators" STYLE_OPERATOR
+!
+%
+&
+*
++
+-
+// /
+:
+<
+=
+>
+?
+^
+|
+@
+\
+.
